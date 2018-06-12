@@ -1,7 +1,7 @@
 #include <LiquidCrystal.h> // initialize the library with the numbers of the interface pins
 LiquidCrystal lcd(0, 1, 8, 9, 10, 11); /// REGISTER SELECT PIN,ENABLE PIN,D4 PIN,D5 PIN, D6 PIN, D7 PIN
 
-// Arduino pin numbers:
+//Arduino pin numbers:
 const int SW_pin = 2; // digital pin connected to switch output
 const int X_pin = 0; // analog pin connected to X output
 const int Y_pin = 1; // analog pin connected to Y output
