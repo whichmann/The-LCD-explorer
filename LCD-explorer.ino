@@ -2,23 +2,19 @@
 LiquidCrystal lcd(0, 1, 8, 9, 10, 11); /// REGISTER SELECT PIN,ENABLE PIN,D4 PIN,D5 PIN, D6 PIN, D7 PIN
 
 //Arduino pin numbers:
-const int SW_pin = 2; // digital pin connected to switch output
-const int X_pin = 0; // analog pin connected to X output
-const int Y_pin = 1; // analog pin connected to Y output
+//const int SW_pin = 2; // digital pin connected to switch output
+//const int X_pin = 0; // analog pin connected to X output
+//const int Y_pin = 1; // analog pin connected to Y output
 
 void setup()
-
 {
   lcd.begin(16, 2); // set up the LCD’s number of columns and rows
   //pinMode(SW_pin, INPUT);
   //digitalWrite(SW_pin, HIGH);
-  Serial.begin(115200);
+  Serial.begin(115200); //might need to be adjusted
 }
 
- 
-
 void loop()
-
 {
 //suggestion, the game will start after joystick is moved in any direction:
 //set the cursor to column 0, line 1
